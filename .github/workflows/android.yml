@@ -21,9 +21,11 @@ jobs:
     - name: Build with Gradle
       #run: ./gradlew build
       run:  ./gradlew assembleDebug --stacktrace
+    - name: ls
+      run: ls
       
     - name: Upload APK
       uses: actions/upload-artifact@v2.3.1
       with:
         name: SensorServer-Apk
-        path: app/build/outputs/apk/debug/
+        path: androbd/build/outputs/apk/debug/
