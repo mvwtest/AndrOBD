@@ -1,6 +1,9 @@
-name: Android CI
+name: mvwOBD
 
-on: [push, pull_request]
+on:
+  workflow_dispatch:
+  repository_dispatch:
+
 
 jobs:
   build:
